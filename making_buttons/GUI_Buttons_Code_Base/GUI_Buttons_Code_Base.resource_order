@@ -2,5 +2,6 @@
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
     {"name":"spr_tile","order":1,"path":"sprites/spr_tile/spr_tile.yy",},
+    {"name":"obj_button","order":1,"path":"objects/obj_button/obj_button.yy",},
   ],
 }
