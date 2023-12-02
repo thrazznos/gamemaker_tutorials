@@ -16,7 +16,7 @@ if(mouse_check_button_released(mb_left))
 	if (hovering)
 	{
 		audio_play_sound(snd_button, 1, false);
-		room_restart();
+		activate_button();
 	}
 }
 

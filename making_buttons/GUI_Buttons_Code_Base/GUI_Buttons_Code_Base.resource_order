@@ -2,6 +2,8 @@
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
     {"name":"spr_tile","order":1,"path":"sprites/spr_tile/spr_tile.yy",},
-    {"name":"obj_button","order":1,"path":"objects/obj_button/obj_button.yy",},
+    {"name":"obj_button_restart","order":2,"path":"objects/obj_button_restart/obj_button_restart.yy",},
+    {"name":"obj_button_exit","order":3,"path":"objects/obj_button_exit/obj_button_exit.yy",},
+    {"name":"obj_button_parent","order":1,"path":"objects/obj_button_parent/obj_button_parent.yy",},
   ],
 }
