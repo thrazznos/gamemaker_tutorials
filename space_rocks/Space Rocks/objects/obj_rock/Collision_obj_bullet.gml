@@ -33,7 +33,7 @@ else
 
 //obj_game.thresholds.
 //set the indicator variable to lowest valuable switch value	
-var _indicator = 100;
+var _indicator = 0;
 for(var _i = 0; _i < array_length(obj_game.thresholds); _i+= 1)
 {
 	if obj_game.points >= obj_game.thresholds[_i]
@@ -42,22 +42,40 @@ for(var _i = 0; _i < array_length(obj_game.thresholds); _i+= 1)
 	}
 }
 
-//BUGBUG: The comparison here isnt working for some reason, possible issue with
-//switch statements and number comparisons?
+//This doesnt work but it would be so freaking cool if it did
+//switch(_indicator)
+//{
+//	for(var _i = 0; _i < array_length(obj+game.thresholds); _i += 1)
+//	{
+//		case obj_game.thresholds[_i]:
+//			obj_game.flavor_text = obj_game.messages[_i];
+//			break;
+//	}
+//}
+
 switch(_indicator)
 {
-	case 100.0:
-		obj_game.flavor_text = "Doing well";
-	case 500.0:
-		obj_game.flavor_text = "Making Progress!";
-	case 800:
-		obj_game.flavor_text = "Masterful";
-	case 1000:
-		obj_game.flavor_text = "Unexpected!";
-	case 1500:
-		obj_game.flavor_text = "INCREDIBLE!";
-	case 2000:
-		obj_game.flavor_text = "LEGENDARY";
+	case obj_game.thresholds[0]:
+		break;
+	case obj_game.thresholds[1]:
+		obj_game.flavor_text = obj_game.messages[1];
+		break;
+	case obj_game.thresholds[2]:
+		obj_game.flavor_text = obj_game.messages[2];
+		break;
+	case obj_game.thresholds[3]:
+		obj_game.flavor_text = obj_game.messages[3];
+		break;
+	case obj_game.thresholds[4]:
+		obj_game.flavor_text = obj_game.messages[4];
+		break;
+	case obj_game.thresholds[5]:
+		obj_game.flavor_text = obj_game.messages[5];
+		break;
+	case obj_game.thresholds[6]:
+		obj_game.flavor_text = obj_game.messages[6];
+		break;
+	
 	default:
-		obj_game.flavor_text = _indicator
+		obj_game.flavor_text = string(_indicator) + " Broken Message";
 }
