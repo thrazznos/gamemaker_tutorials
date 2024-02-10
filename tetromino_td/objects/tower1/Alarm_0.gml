@@ -15,7 +15,7 @@ show_debug_message(alarm_get(0));
 show_debug_message("Alarm 0!");
 alarm_set(0, 60);
 //alarm_get(0);
-		instance_create_layer(x_loc, y_loc, "Instances", obj_bullet, {
+		instance_create_layer(x_loc, y_loc, "Instances", obj_bullet_straight, {
 		speed: 10,
 		direction: (image_angle + 90)
 	});	
